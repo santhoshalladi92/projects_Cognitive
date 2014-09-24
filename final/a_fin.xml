@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<students>
+	<student>
+		<iden>
+			<ssn>123</ssn>
+			<coll_id>234</coll_id>
+		</iden>
+		<name> 
+			<first>Santhosh</first> 
+			<last> Alladi </last>
+		</name>
+		<contact>
+			<personal>9666828472</personal>
+			<parent>7660882666</parent>
+		</contact>
+		<email> 
+			<official>f2011086@hyderabad.bits-pilani.ac.in</official>
+			<other>santhosh.alladi92@gmail.com</other>
+		</email>
+		<branch>
+			<be>ComSci</be>
+			<msc />
+		</branch>
+		<course>
+			<cdc>
+				<cnum>CS F222</cnum>
+				<cgrade>A</cgrade>
+			</cdc>
+			<elective>
+				<cnum>BITS F434</cnum>
+				<cgrade>A</cgrade>
+			</elective>
+		</course>
+	</student>
+	
+	<student>
+		<iden>
+			<ssn>34354</ssn>
+			<coll_id>34352</coll_id>
+		</iden>
+		<name> 
+			<first>cognitive</first> 
+			<last>scale </last>
+		</name>
+		<contact>
+			<personal>9123112345</personal>
+			<parent>1231231212</parent>
+		</contact>
+		<email> 
+			<official>cognitive@hyderabad.bits-pilani.ac.in</official>
+			<other>cog.scale@gmail.com</other>
+		</email>
+		<branch>
+			<be>ComSci</be>
+			<msc />
+		</branch>
+		<course>
+			<cdc>
+				<cnum>AI C343</cnum>
+				<cgrade>A</cgrade>		
+			</cdc>
+			<elective>
+				<cnum>AI C343</cnum>
+				<cgrade>A</cgrade>
+            </elective>
+		</course>
+	</student>	
+</students>

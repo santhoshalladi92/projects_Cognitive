@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+         <xs:element name="students">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="student" maxOccurs="unbounded">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="iden">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="ssn" type="xs:integer"></xs:element>
+                                                               <xs:element name="coll_id" type="xs:integer" minOccurs="1"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="name">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="first" type="xs:string" minOccurs="1"></xs:element>
+                                                               <xs:element name="last" type="xs:string"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="contact">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="personal" minOccurs="1">
+																<xs:simpleType>
+																	<xs:restriction base="xs:integer">
+																	  <xs:pattern value="[0-9]{10}"/>
+																	</xs:restriction>
+																  </xs:simpleType>
+																</xs:element>
+																<xs:element name="parent" minOccurs="1">
+																<xs:simpleType>
+																	<xs:restriction base="xs:integer">
+																	  <xs:pattern value="[0-9]{10}"/>
+																	</xs:restriction>
+																  </xs:simpleType>
+																</xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="email">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="official" type="xs:string" minOccurs="1"></xs:element>
+                                                               <xs:element name="other" type="xs:string"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="branch">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="be" type="xs:string" minOccurs="1"></xs:element>
+                                                               <xs:element name="msc" minOccurs="0"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="course" minOccurs="1">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="cdc" minOccurs="1">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="cnum" type="xs:string"></xs:element>
+                                                                                 <xs:element name="cgrade" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                               <xs:element name="elective" minOccurs="1">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="cnum" type="xs:string"></xs:element>
+                                                                                 <xs:element name="cgrade" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+        </xs:element>
+   </xs:schema>
